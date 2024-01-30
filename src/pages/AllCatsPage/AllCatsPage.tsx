@@ -24,8 +24,8 @@ const AllCatsPage = observer(() => {
             <Grid container spacing={2} style={{ padding: 16 }}>
                 {mobXStore.cats.map((cat, index) => (
                     <Grid key={index} item xs={12} sm={6} md={4} lg={3} xl={2}>
-                        <Paper elevation={3} style={{ boxShadow: '0 0 5px rgba(0, 0, 0, 0.3)', width: '255px', height: '255px', position: 'relative' }}>
-                            <img src={cat.url} alt={`Kitten ${index}`} style={{ width: '255px', height: '255px' }} />
+                        <Paper elevation={3} style={{ boxShadow: '0 0 5px rgba(0, 0, 0, 0.3)', width: '225px', height: '225px', position: 'relative' }}>
+                            <img src={cat.url} alt={`Kitten ${index}`} style={{ width: '225px', height: '225px' }} />
                             <IconButton
                                 onClick={() => handleLikeToggle(cat.id)}
                                 style={{ position: 'absolute', bottom: 8, right: 8, color: cat.liked ? 'red' : 'gray' }}
