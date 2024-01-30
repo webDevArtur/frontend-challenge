@@ -12,12 +12,12 @@ function Header() {
             <AppBar position="static">
                 <Toolbar>
                     <Link to="/allcats" style={{ textDecoration: 'none', color: 'white'}}>
-                        <Button color="inherit" size="large">
+                        <Button color="inherit" size="large" sx={{textTransform: 'none'}}>
                             Все котики
                         </Button>
                     </Link>
                     <Link to="/lovelycats" style={{ textDecoration: 'none', color: 'white'}}>
-                        <Button color="inherit" size="large">
+                        <Button color="inherit" size="large" sx={{textTransform: 'none'}}>
                             Любимые котики
                         </Button>
                     </Link>
